@@ -14,5 +14,13 @@ export const useMyProductsStoreStore = defineStore({
       // console.log(productsListData);
       this.products = productsListData.data;
     },
+
+    async filterProducts() {
+      const filterProducts = await $fetch(
+        "https://api-forklift.code95.info/v1/products/filters"
+      );
+      console.log(filterProducts);
+      this.products = filterProducts.data;
+    },
   },
 });

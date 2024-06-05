@@ -103,7 +103,11 @@
 </template>
 
 <script setup>
+const store = useMyProductsStoreStore()
 
+onMounted(() => {
+  store.filterProducts()
+})
 </script>
 
 <style scoped>
