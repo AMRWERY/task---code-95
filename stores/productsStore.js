@@ -9,11 +9,11 @@ export const useMyProductsStoreStore = defineStore({
   actions: {
     async getProductsData() {
       const productsListData = await $fetch(
-        // "https://api-forklift.code95.info/v1/products/getJson"
-        "https://fakestoreapi.com/products"
+        "https://api-forklift.code95.info/v1/products/getJson"
+        // "https://fakestoreapi.com/products"
       );
       console.log(productsListData);
-      // this.products = productsListData.data;
+      this.products = productsListData.data;
     },
   },
 });
