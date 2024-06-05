@@ -21,7 +21,7 @@
                 <p class="text-lg font-normal uppercase text-slate-900">
                   Capacity: <span class="text-[#d04c5b]">{{ product.numericTypes[0].value }}</span>
                 </p>
-                <div class="mt-4">
+                <div class="mt-5">
                   <nuxt-link to="#" type="button"
                     class="py-3.5 text-sm font-medium text-center uppercase px-7 text-secondary bg-primary rounded-2xl">ViewProduct</nuxt-link>
                 </div>

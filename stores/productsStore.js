@@ -10,9 +10,8 @@ export const useMyProductsStoreStore = defineStore({
     async getProductsData() {
       const productsListData = await $fetch(
         "https://api-forklift.code95.info/v1/products/getJson"
-        // "https://fakestoreapi.com/products"
       );
-      console.log(productsListData);
+      // console.log(productsListData);
       this.products = productsListData.data;
     },
   },
